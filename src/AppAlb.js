@@ -41,10 +41,10 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/4.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="supat" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/5.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="salad" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/6.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -62,7 +62,7 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/11.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="wrap" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/12.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -74,7 +74,7 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/15.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="burger" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/16.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -86,7 +86,7 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/19.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="smoothie" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/20.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -98,7 +98,7 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/23.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="fresh" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/24.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -110,16 +110,16 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/27.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="snacks" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/28.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/29.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="sweets" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/30.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="other" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/al/31.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="20px">
