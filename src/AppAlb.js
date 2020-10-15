@@ -1,22 +1,25 @@
-import React from "react";
+import React ,{useState} from "react";
 import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
 import NavBar from "./components/NavBar";
 import LangaugeOption from "./components/LangaugeOption";
-
+import CategoryMenu  from './components/CategoryMenu';
 
 function App() {
 
+    const [category,showCategory] = useState(false);
+
   return (
 <>
-          {/* <LangaugeOption /> */}
+        {!localStorage.getItem('lan') &&  <LangaugeOption />}
+          <CategoryMenu showCategory={category} closeCategory={() => showCategory(false)} />
     <Box
       component="div"
       width="100%"
       style={{ backgroundColor: "#121212" }}
     >
 
-      <NavBar />
+      <NavBar  openCategory={ () => showCategory(true)} />
       <Container
         maxWidth="lg"
         style={{

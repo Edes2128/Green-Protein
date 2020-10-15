@@ -1,22 +1,23 @@
-import React from "react";
+import React,{useState} from "react";
 import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
 import NavBar from "./components/NavBar";
 import LangaugeOption from "./components/LangaugeOption";
-
+import CategoryMenu  from './components/CategoryMenu';
 
 function App() {
-
+    const [category,showCategory] = useState(false);
   return (
     <>
-          {/* <LangaugeOption /> */}
+        {!localStorage.getItem('lan') &&  <LangaugeOption />}
+        <CategoryMenu showCategory={category} closeCategory={() => showCategory(false)}/>
     <Box
       component="div"
       width="100%"
       style={{ backgroundColor: "#121212" }}
     >
 
-      <NavBar />
+      <NavBar openCategory={ () => showCategory(true)} />
       <Container
         maxWidth="lg"
         style={{
@@ -38,13 +39,13 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/4.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="supat" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/5.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="salad" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/6.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box  className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/7.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -59,7 +60,7 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/11.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="wrap" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/12.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -71,7 +72,7 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/15.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="burger" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/16.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -83,7 +84,7 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/19.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="smoothie" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/20.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -95,7 +96,7 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/23.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="fresh" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/24.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
@@ -107,19 +108,19 @@ function App() {
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/27.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="snacks" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/28.jpg" alt="GreenMenu" />
         </Box>
         <Box className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/29.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="sweets" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/30.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="40px">
+        <Box id="other" className="foto-galeri" width="65%" mb="40px">
           <img width="100%" src="./images/en/31.jpg" alt="GreenMenu" />
         </Box>
-        <Box className="foto-galeri" width="65%" mb="20px">
+        <Box  className="foto-galeri" width="65%" mb="20px">
           <img width="100%" src="./images/en/32.jpg" alt="GreenMenu" />
         </Box>
       </Container>
