@@ -103,6 +103,9 @@ html{
   .cotainer-language{
     width: 100%;
     height: 100%;
-
+  }
+  .category-menu-container{
+    height: 100%;
+    width: 100%;
   }
 }
