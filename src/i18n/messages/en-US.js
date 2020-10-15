@@ -1,0 +1,38 @@
+import {LOCALES} from '../locales'
+
+export default {
+    [LOCALES.ENGLISH] : {
+        '1' : './images/en/1.jpg',
+        '2' : './images/en/2.jpg',
+        '3' : './images/en/3.jpg',
+        '4' : './images/en/4.jpg',
+        '5' : './images/en/5.jpg',
+        '6' : './images/en/6.jpg',
+        '7' : './images/en/7.jpg',
+        '8' : './images/en/8.jpg',
+        '9' : './images/en/9.jpg',
+        '10' : './images/en/10.jpg',
+        '11' : './images/en/11.jpg',
+        '12' : './images/en/12.jpg',
+        '13' : './images/en/13.jpg',
+        '14' : './images/en/14.jpg',
+        '15' : './images/en/15.jpg',
+        '16' : './images/en/16.jpg',
+        '17' : './images/en/17.jpg',
+        '18' : './images/en/18.jpg',
+        '19' : './images/en/19.jpg',
+        '20' : './images/en/20.jpg',
+        '21' : './images/en/21.jpg',
+        '22' : './images/en/22.jpg',
+        '23' : './images/en/23.jpg',
+        '24' : './images/en/24.jpg',
+        '25' : './images/en/25.jpg',
+        '26' : './images/en/26.jpg',
+        '27' : './images/en/27.jpg',
+        '28' : './images/en/28.jpg',
+        '29' : './images/en/29.jpg',
+        '30' : './images/en/30.jpg',
+        '31' : './images/en/31.jpg',
+        '32' : './images/en/32.jpg',
+    }
+}
