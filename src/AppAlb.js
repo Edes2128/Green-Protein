@@ -8,10 +8,11 @@ import CategoryMenu  from './components/CategoryMenu';
 function App() {
 
     const [category,showCategory] = useState(false);
-
+    const lan = JSON.parse(localStorage.getItem('lan'));
+    console.log(lan)
   return (
 <>
-        {!localStorage.getItem('lan') &&  <LangaugeOption />}
+        {!JSON.parse(localStorage.getItem('lan'))  &&  <LangaugeOption />}
           <CategoryMenu showCategory={category} closeCategory={() => showCategory(false)} />
     <Box
       component="div"

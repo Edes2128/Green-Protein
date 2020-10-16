@@ -5,10 +5,10 @@ import AppEn from './AppEn';
 function App() {
 
   useEffect(() => {
-    if(!localStorage.getItem('lan')){
-      localStorage.setItem('lan',false)
+    if(localStorage.getItem('lan') === null){
+      localStorage.setItem('lan', JSON.stringify(false))
     }
-  })
+  },[JSON.parse(localStorage.getItem('lan'))])
 
   return (
    <Switch>
