@@ -9,12 +9,12 @@ export default function LangaugeOption() {
                 <div>
                     <Link onClick={() => {
                         localStorage.setItem('lan', JSON.stringify(true))
-                        localStorage.setItem('chosen', 'al')
+                        localStorage.setItem('chosen', JSON.stringify('al'))
                     }} style={{ fontSize: '30px', textDecoration: 'none', color: 'white' }} to="/">Albania</Link>
                     <span style={{ fontSize: '30px', cursor: 'pointer', color: 'white' }}> / </span>
                     <Link onClick={() => {
                         localStorage.setItem('lan',  JSON.stringify(true))
-                        localStorage.setItem('chosen', 'en')
+                        localStorage.setItem('chosen', JSON.stringify('en'))
                     }}
                         style={{ fontSize: '30px', textDecoration: 'none', color: 'white' }} to="/en">English</Link>
                 </div>
