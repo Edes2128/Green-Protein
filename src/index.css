@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -11,7 +12,9 @@ html{
 .logo{
   width: 100%;
 }
-
+.overflow{
+  overflow: hidden;
+}
 .langauge-choose{
   position: fixed;
   z-index: 100 !important;
@@ -22,20 +25,34 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url('/tas.jpg') center no-repeat;
 }
 
 .language-opa{
   width: 100%;
   height: 100%;
-  opacity: .8;
-  background-color: black;
+  opacity: .3;
+  background-color: rgb(255, 255, 255);
   position: fixed;
+}
+.choose-language-title{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  opacity: .7;
+  position: fixed;
+}
+.h1-choose-language{
+  text-align: center;
+   color: white;
+   text-transform:uppercase;
 }
 
 .cotainer-language{
-  width: 600px;
+  width: 1200px;
   height: 500px;
-  background-color: #121212;
+  background-color:#508B6B;
+  opacity: .8;
   position: fixed;
   z-index: 4;
   display: flex;
@@ -80,6 +97,15 @@ html{
   flex-direction: column;
   align-items: center;
 }
+.category-ul{
+  list-style: none;
+   height: 100%; 
+   width: 60%; 
+   display: flex;
+    flex-direction: column; 
+    justify-content: center;
+     align-items: center;
+}
 .active-category{
   transform: translateX(0%);
   transition: all .7s ease-in-out;
@@ -88,8 +114,14 @@ html{
   transform: translateY(0%);
   transition: all .7s ease-in-out;
 }
+.left-category{
+width: 100%;
+}
+.right-category{
+width: 100%;
+}
 .link-category{
-  color: #8BD25A;
+  color: #ffffff;
   text-decoration: none;
   font-size: 20px;
   text-transform: uppercase;
@@ -116,8 +148,15 @@ html{
 }
 .div-social h1{
   color: white;
-  text-align: center;
- 
+  text-align: center; 
+  font-size: 18px;
+}
+.links-social-media-div{
+  width:30%;
+  height:10%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 @media (max-width:650px){
   .logo{
@@ -136,5 +175,42 @@ html{
   }
   .link-category{
     font-size: 13px;
+  }
+  .h1-choose-language{
+     font-size: 18px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+  }
+  .choose-language-title{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+  }
+  .links-social-media-div{
+    width:70%;
+
+  }
+}
+
+@media  (min-device-width : 468px) 
+and (max-device-width : 1023px) and (orientation : landscape) {
+
+  .category-ul{
+    flex-direction: row;
+    width: 80%;
+  }
+  .category-menu-container{
+    width: 100%;
+  }
+  .caategory-li {
+    width: 100%;
+}
+.left-category{
+  height: 100%;
+  }
+  .right-category{
+  height:  100%;
   }
 }
