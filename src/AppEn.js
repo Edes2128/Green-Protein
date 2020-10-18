@@ -4,9 +4,13 @@ import Container from "@material-ui/core/Container";
 import NavBar from "./components/NavBar";
 import LangaugeOption from "./components/LangaugeOption";
 import CategoryMenu from "./components/CategoryMenu";
+import TranslateProvider from './i18n/TranslateProvider';
+import {LOCALES} from './i18n/locales';
+import translate from './i18n/translate';
 
 function App() {
   const [category, showCategory] = useState(false);
+  const [locales,setLocales] = useState(LOCALES.ALBANIA)
   const lan = JSON.parse(localStorage.getItem("lan"));
   useEffect(() => {
     const body = document.getElementById("body");
@@ -18,7 +22,7 @@ function App() {
   });
 
   return (
-    <>
+    <TranslateProvider locale={locales} >
       {!JSON.parse(localStorage.getItem("lan")) && <LangaugeOption />}
       <CategoryMenu
         showCategory={category}
@@ -36,7 +40,7 @@ function App() {
           }}
         >
           <Box className="foto-galeri" width="65%" mb="20px">
-            <img width="100%" src="./images/en/1.jpg" alt="GreenMenu" />
+            {<img width="100%" src={"./images/en/1.jpg"} alt="GreenMenu" />}
           </Box>
           <Box className="foto-galeri" width="65%" mb="20px">
             <img width="100%" src="./images/en/2.jpg" alt="GreenMenu" />
@@ -133,7 +137,7 @@ function App() {
           </Box>
         </Container>
       </Box>
-    </>
+      </TranslateProvider>
   );
 }
 

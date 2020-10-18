@@ -10,15 +10,17 @@ export default function LangaugeOption() {
                 <h1 className="h1-choose-language"> <span> Zgjidh gjuhen /</span> <span> Choose a language</span></h1>
                 </div>
                 <div>
-                    <Link onClick={() => {
+                <img  style={{cursor:'pointer'}} onClick={() => {
                         localStorage.setItem('lan', JSON.stringify(true))
                         localStorage.setItem('chosen', JSON.stringify('al'))
-                    }} style={{ fontSize: '30px', textDecoration: 'none', color: 'white' }} to="/"> <img width="80" src="/al.png" alt=""/> </Link>
-                    <Link onClick={() => {
-                        localStorage.setItem('lan',  JSON.stringify(true))
-                        localStorage.setItem('chosen', JSON.stringify('en'))
-                    }}
-                        style={{ fontSize: '30px', textDecoration: 'none', color: 'white' }} to="/en"><img width="80" src="/en.png" alt=""/></Link>
+                        window.location.reload();
+                    }} width="80" src="/al.png" alt=""/> 
+                  <img  style={{cursor:'pointer'}} onClick={() => {
+                            localStorage.setItem('lan',  JSON.stringify(true))
+                            localStorage.setItem('chosen', JSON.stringify('en'))
+                            window.location.reload();
+
+                        }} width="80" src="/en.png" alt=""/>
                 </div>
             </div>
         </div>

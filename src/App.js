@@ -10,10 +10,12 @@ function App() {
     }
   },[JSON.parse(localStorage.getItem('lan'))])
 
+  let chosen = JSON.parse(localStorage.getItem('chosen'))
+
   return (
-   <Switch>
-     <Route exact path="/" component={AppAlb} />
-     <Route exact path="/en" component={AppEn} />
+   <Switch>     
+    <Route exact path="/" component={AppAlb} /> 
+    {/* <Route exact path="/en" component={AppEn} />  */}
    </Switch>
   );
 }

@@ -2,7 +2,7 @@ import {LOCALES} from '../locales'
 
 export default {
     [LOCALES.ENGLISH] : {
-        '1' : './images/en/1.jpg',
+        '1' : 'en',
         '2' : './images/en/2.jpg',
         '3' : './images/en/3.jpg',
         '4' : './images/en/4.jpg',

@@ -2,7 +2,7 @@ import {LOCALES} from '../locales'
 
 export default {
     [LOCALES.ALBANIA] : {
-        '1' : './images/al/1.jpg',
+        '1' : 'al',
         '2' : './images/al/2.jpg',
         '3' : './images/al/3.jpg',
         '4' : './images/al/4.jpg',
