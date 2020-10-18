@@ -32,7 +32,7 @@ export default function CategoryMenu({ showCategory, closeCategory }) {
                 </nav>
                 <hr className="hr" />
                 <div className="div-social">
-                    <h1>{window.location.pathname === '/en' ? 'Follow us on' : 'Na ndiqni '}</h1>
+                    <h1>{JSON.parse(localStorage.getItem('chosen')) === 'en' ? 'Follow us on' : 'Na ndiqni '}</h1>
                     <div className="links-social-media-div">
                         <a target="_blank" href="https://www.facebook.com/greenandproteintr/"><SiFacebook style={{ color: 'white', fontSize: '40px' }} /></a>
                         <a target="_blank" href="https://www.instagram.com/greenandproteintirana/"> <SiInstagram style={{ color: 'white', fontSize: '40px' }} /></a>
