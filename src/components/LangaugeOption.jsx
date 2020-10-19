@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 export default function LangaugeOption() {
     return (
         <div className="langauge-choose">
@@ -7,7 +6,7 @@ export default function LangaugeOption() {
             <div className="cotainer-language">
                 <img src="/black-logo.png" alt=""/>
                 <div className="choose-language-title">
-                <h1 className="h1-choose-language"> <span> Zgjidh gjuhen /</span> <span> Choose a language</span></h1>
+                <h1 className="h1-choose-language"> <span> Zgjidh gjuhën /</span> <span> Choose a language</span></h1>
                 </div>
                 <div>
                 <img  style={{cursor:'pointer'}} onClick={() => {

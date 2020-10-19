@@ -7,9 +7,8 @@ function App() {
     if(localStorage.getItem('lan') === null){
       localStorage.setItem('lan', JSON.stringify(false))
     }
-  },[JSON.parse(localStorage.getItem('lan'))])
+  },[])
 
-  let chosen = JSON.parse(localStorage.getItem('chosen'))
 
   return (
    <Switch>     

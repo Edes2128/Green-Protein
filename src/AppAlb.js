@@ -7,8 +7,6 @@ import CategoryMenu from "./components/CategoryMenu";
 
 function App() {
   const [category, showCategory] = useState(false);
-  const lan = JSON.parse(localStorage.getItem("lan"));
-
   useEffect(() => {
     const body = document.getElementById("body");
     if (category) {
