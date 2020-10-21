@@ -18,13 +18,12 @@ export default function CategoryMenu({ showCategory, closeCategory }) {
                             <li className="caategory-li" onClick={() => closeCategory()}> <a href="#salad"> <img className="logo-category" src="/salad.png" alt="Sallat" /></a><a className="link-category" href="#salad">{JSON.parse(localStorage.getItem('chosen')) === 'en' ? 'Salads' : 'Sallatat'}</a></li>
                             <li className="caategory-li" onClick={() => closeCategory()}> <a href="#wrap"><img className="logo-category" src="/wrap.png" alt="Wraps" /></a><a className="link-category" href="#wrap">Wraps</a></li>
                             <li className="caategory-li" onClick={() => closeCategory()}> <a href="#burger"> <img className="logo-category" src="/burger.png" alt="Burger" /> </a><a className="link-category" href="#burger">{JSON.parse(localStorage.getItem('chosen')) === 'en' ? 'Burgers' : 'Burgera'}</a></li>
-                            <li className="caategory-li" onClick={() => closeCategory()}> <a href="#smoothie"> <img className="logo-category" src="/smoothie.png" alt="Smoothie" /></a><a className="link-category" href="#smoothie">Smoothie bowls</a></li>
+                            
                         </div>
                         <div className="right-category">
-
+                        <li className="caategory-li" onClick={() => closeCategory()}> <a href="#smoothie"> <img className="logo-category" src="/smoothie.png" alt="Smoothie" /></a><a className="link-category" href="#smoothie">Smoothie bowls</a></li>
                             <li className="caategory-li" onClick={() => closeCategory()}> <a href="#fresh"> <img className="logo-category" src="/orange-juice.png" alt="Juices" /></a><a className="link-category" href="#fresh">{JSON.parse(localStorage.getItem('chosen')) === 'en' ? 'Fresh Juice' : 'Lëngje të freskët'}</a></li>
-                            <li className="caategory-li" onClick={() => closeCategory()}> <a href="#snacks"> <img className="logo-category" src="/snack.png" alt="Snacks" /></a><a className="link-category" href="#snacks">{JSON.parse(localStorage.getItem('chosen')) === 'en' ? 'Snacks' : 'Zemrat'}</a></li>
-                            <li className="caategory-li" onClick={() => closeCategory()}> <a href="#sweets"> <img className="logo-category" src="/sweet-food.png" alt="Sweets" /></a><a className="link-category" href="#sweets">{JSON.parse(localStorage.getItem('chosen')) === 'en' ? 'Sweets' : 'Ëmbëlsira'}</a></li>
+                            <li className="caategory-li" onClick={() => closeCategory()}> <a href="#snacks"> <img className="logo-category" src="/sweet-food.png" alt="Sweets" /></a><a className="link-category" href="#snacks">{JSON.parse(localStorage.getItem('chosen')) === 'en' ? 'Snacks' : 'Zemrat'}</a></li>
                             <li className="caategory-li" onClick={() => closeCategory()}> <a href="#other"> <img className="logo-category" src="/water-bottle.png" alt="Other" /></a><a className="link-category" href="#other">{JSON.parse(localStorage.getItem('chosen')) === 'en' ? 'Other drinks' : 'Pije të tjera'}</a></li>
                         </div>
                     </ul>
